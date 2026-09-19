@@ -1,0 +1,97 @@
+# WinUI XAML Designer
+
+一个独立于 Visual Studio 的轻量级 WinUI 3 XAML 可视化编辑器。
+
+## 当前定位
+
+本项目采用 **WinUI 3 + Single-project MSIX / Packaged**，不需要额外的 Windows Application Packaging Project。
+
+核心路径：
+
+```text
+打开 XAML
+  ↓
+解析 → 内存模型
+  ↓
+自绘设计视图
+  ↓
+工具箱直接拖拽
+  ↓
+属性编辑 / x:Name
+  ↓
+Click / Tapped / Loaded
+  ↓
+Roslyn 修改 C#
+  ↓
+事务写回 XAML + C#
+  ↓
+Visual Studio 重载
+```
+
+## 主要功能
+
+- WinUI 3 自绘 Designer
+- Grid（网格布局）设计
+- 工具箱原生拖拽
+- 30+ 常用 WinUI 控件
+- 控件/Window 选择
+- 动态属性启用/禁用
+- WindowTitleBar 预览
+- 关于 ContentDialog
+- Tip 随机提示，每分钟切换一次
+- Undo / Redo
+- 空白 XAML 自动创建默认 1×1 Grid
+- XAML Property Element 识别
+- 复杂/暂不支持的 XAML 尽量保留
+- x:Name 驱动 Click / Tapped
+- Roslyn C# handler 生成/重命名
+- Ctrl+S、Enter、LostFocus 提交属性
+- XAML + C# 双文件写回与失败回滚
+
+## 项目结构
+
+```text
+WinUIXamlDesigner/
+├─ Assets/
+├─ Models/
+├─ Services/
+├─ Properties/
+│  ├─ launchSettings.json
+│  └─ PublishProfiles/
+├─ App.xaml
+├─ App.xaml.cs
+├─ MainWindow.xaml
+├─ MainWindow.xaml.cs
+├─ Package.appxmanifest
+├─ WinUIXamlDesigner.csproj
+└─ WinUIXamlDesigner.sln
+```
+
+## Packaged 调试
+
+这是 **Single-project MSIX / Packaged** 项目：
+
+- `EnableMsixTooling=true`
+- `WindowsPackageType=MSIX`
+- `AppxPackage=true`
+- `Package.appxmanifest` 位于项目根目录
+- `Properties/launchSettings.json` 使用 `MsixPackage`
+- 当前默认平台为 x64
+
+Visual Studio 2026+ 的 Single-project MSIX 调试使用 `MsixPackage` 启动 profile。
+
+## 开发签名证书
+
+工程带有本地开发证书：
+
+`WinUIXamlDesigner_TemporaryKey.pfx`
+
+它只用于本地开发/测试，不用于正式发布。正式发布前应替换为自己的签名证书。
+
+## 作者
+
+**MisntX & ChatGPT**
+
+## AI 声明
+
+**Code is full AI**
