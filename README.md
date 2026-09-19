@@ -1,6 +1,22 @@
+<p align="center">
+<img src="[https://cdn.phototourl.com/free/2026-08-07-a4024ebb-a0ef-4509-823d-c323464b7f07.png](https://img.remit.ee/i/45JuAoErsgmO)" width="150" alt="Logo"/>
+</p>
+
+<div align="center">
+
 # WinUI XAML Designer
 
-一个独立于 Visual Studio 的轻量级 WinUI 3 XAML 可视化编辑器。
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/MsintX/WinUIXamlDesigner)](https://github.com/MsintX/WinUIXamlDesigner/releases) ![GitHub Release Date](https://img.shields.io/github/release-date/MsintX/WinUIXamlDesigner) 
+![GitHub All Releases](https://img.shields.io/github/downloads/MsintX/WinUIXamlDesigner/total) 
+![GitHub stars](https://img.shields.io/github/stars/MsintX/WinUIXamlDesigner?style=flat) 
+![GitHub forks](https://img.shields.io/github/forks/MsintX/WinUIXamlDesigner)
+![GitHub issues](https://img.shields.io/github/issues/MsintX/WinUIXamlDesigner)
+![GitHub license](https://img.shields.io/github/license/MsintX/WinUIXamlDesigner)
+![GitHub last commit](https://img.shields.io/github/last-commit/MsintX/WinUIXamlDesigner)
+
+`WinUI XAML Designer`是一个独立于 Visual Studio 的轻量级 WinUI 3 XAML 可视化编辑器。
+
+</div>
 
 ## 当前定位
 
