@@ -1,4 +1,4 @@
-> README除开头勋章部分，其他均使用AI编写
+> README除开头勋章部分，其他部分均使用AI编写
 <p align="center">
 <img src="\Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png" width="150" alt="Logo"/>
 </p>
@@ -24,6 +24,7 @@
 ## 目录
 
 - [这是什么](#这是什么)
+- [截图预览](#截图预览)
 - [功能特性](#功能特性)
 - [系统要求](#系统要求)
 - [安装与构建](#安装与构建)
@@ -61,7 +62,11 @@ Visual Studio 检测到外部修改
 · 不支持的复杂 XAML 结构尽量保留，不静默删除或修改。
 
 ---
-
+截图预览  
+<p align="center">
+<img src="\Assets\readme\AppMainPage.png" width="150" alt="png"/>
+</p>
+---
 功能特性
 
 设计画布
