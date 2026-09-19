@@ -91,7 +91,3 @@ Visual Studio 2026+ 的 Single-project MSIX 调试使用 `MsixPackage` 启动 pr
 ## 作者
 
 **MisntX & ChatGPT**
-
-## AI 声明
-
-**Code is full AI**
