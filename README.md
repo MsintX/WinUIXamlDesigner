@@ -64,9 +64,10 @@ Visual Studio 检测到外部修改
 ---
 截图预览  
 <p align="center">
-<img src="\Assets\readme\AppMainPage.png" width="150" alt="png"/>
+<img src="\Assets\readme\AppMainPage.png" alt="png"/>
 </p>
----
+---  
+
 功能特性
 
 设计画布
