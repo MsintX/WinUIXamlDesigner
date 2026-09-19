@@ -62,13 +62,13 @@ Visual Studio 检测到外部修改
 · 不支持的复杂 XAML 结构尽量保留，不静默删除或修改。
 
 ---
-截图预览  
+## 截图预览  
 <p align="center">
 <img src="\Assets\readme\AppMainPage.png" alt="png"/>
 </p>
----  
+---
 
-功能特性
+##功能特性
 
 设计画布
 
@@ -153,7 +153,7 @@ C# 事件生成
 
 ---
 
-系统要求
+## 系统要求
 
 项目 要求
 操作系统 Windows 10 1809（17763）或更高 / Windows 11
@@ -164,7 +164,7 @@ UI 框架 WinUI 3（Windows App SDK）
 
 ---
 
-安装与构建
+## 安装与构建
 
 从源码构建
 
@@ -192,7 +192,7 @@ UI 框架 WinUI 3（Windows App SDK）
 
 ---
 
-快速上手
+## 快速上手
 
 场景一：从空白 XAML 开始
 
@@ -219,7 +219,7 @@ UI 框架 WinUI 3（Windows App SDK）
 
 ---
 
-界面说明
+## 界面说明
 
 ```text
 ┌──────────────────────────────────────────────────────────────┐
@@ -265,7 +265,7 @@ Esc 取消放置 / 拖动
 
 ---
 
-XAML 支持边界
+## XAML 支持边界
 
 明确支持 / 重点支持
 
@@ -299,7 +299,7 @@ XAML 支持边界
 
 ---
 
-C# 事件生成规则
+## C# 事件生成规则
 
 控件类型 派生事件
 Button / HyperlinkButton / ToggleButton / RepeatButton Click
@@ -329,7 +329,7 @@ Button / HyperlinkButton / ToggleButton / RepeatButton Click
 
 ---
 
-常见问题
+## 常见问题
 
 Q：为什么打开复杂 XAML 后，有些控件看不见？
 A：设计器只把工具箱支持的叶子控件放入视觉模型。CommandBar、Border、嵌套 Grid、模板等结构会保留在原 XAML 中，但不参与可视化编辑，避免误改。
@@ -354,41 +354,15 @@ A：不会。设计器会识别用户手写的事件并保留，仅同步自动�
 
 ---
 
-许可证
+## 许可证
 
-本项目采用 MIT License 发布。
-
-```text
-MIT License
-
-Copyright (c) 2026 MisntX & ChatGPT
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+本项目采用 Apache 2.0 License 发布。
 
 仓库中请附带完整 LICENSE 文件，并将 Copyright (c) 2026 中的年份改为实际发布年份。
 
-若你希望改用其他许可证（如 Apache-2.0），请替换本节与 LICENSE 文件，并同步更新此 README。
-
 ---
 
-贡献与反馈
+## 贡献与反馈
 
 · 欢迎在 GitHub 上提交 Issue 反馈 Bug 或提出建议。
 · 提交 PR 前请先确认本地可正常构建（x64 配置）。
@@ -397,7 +371,7 @@ SOFTWARE.
 
 ---
 
-技术栈
+## 技术栈
 
 · WinUI 3（Windows App SDK）
 · .NET 8
@@ -406,6 +380,6 @@ SOFTWARE.
 
 ---
 
-作者
+## 作者
 
 MisntX & ChatGPT(Code includes small AIGC)
