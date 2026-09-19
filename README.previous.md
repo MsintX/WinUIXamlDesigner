@@ -62,9 +62,9 @@
 
 **作者：MisntX & ChatGPT**
 
-**Code is full AI**
+**Code includes small AIGC**
 
-本项目的源码实现由 AI 完成，并由作者进行需求、方向和实现验收。
+本项目的部分源码实现由 AI 完成，并由作者进行需求、方向和实现验收。
 
 
 ## Fix 9 行为
