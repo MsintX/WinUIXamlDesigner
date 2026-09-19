@@ -6,7 +6,7 @@
 >
 > 作者：**MisntX & ChatGPT**
 >
-> AI 声明：**Code is full AI**
+> AI 声明：**Code includes small AIGC**
 
 ---
 
@@ -155,7 +155,7 @@
 
 **作者：MisntX & ChatGPT**
 
-**Code is full AI**
+**Code includes small AIGC**
 
 ---
 
@@ -579,7 +579,7 @@ CommandBar
 
 ## 12.3 属性面板升级
 
-根据用户提出的设计思路：
+根据我提出的设计思路：
 
 > **所有可编辑框都列出来，再根据当前选中控件动态启用/禁用。**
 
@@ -758,7 +758,7 @@ string 常量值
 
 # 15. 本机首次正式 Build 通过
 
-最终在作者本机 Visual Studio 中完成实际生成。
+最终在 Visual Studio 中完成实际生成。
 
 生成结果：
 
@@ -873,11 +873,11 @@ Visual Studio 检测外部修改
 
 ---
 
-# 19. 下一阶段建议
+# 19. 下一阶段方向
 
 下一阶段的重点不再是单纯“让它能编译”，而是 Designer 的实际使用体验。
 
-建议方向：
+方向：
 
 ### Designer
 
@@ -947,7 +947,7 @@ Visual Studio 检测外部修改
 
 ## AI 声明
 
-**Code is full AI**
+**Code includes small AIGC**
 
 本项目的源码实现由 AI 完成，并由作者负责需求、方向、测试与验收。
 
