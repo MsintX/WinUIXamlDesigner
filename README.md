@@ -1,5 +1,5 @@
 <p align="center">
-<img src="[[https://cdn.phototourl.com/free/2026-08-07-a4024ebb-a0ef-4509-823d-c323464b7f07.png]([https://img.remit.ee/i/45JuAoErsgmO](https://implicit-amaranth-hjznfrr1.edgeone.dev/))](https://implicit-amaranth-hjznfrr1.edgeone.dev/)" width="150" alt="Logo"/>
+<img src="\Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png" width="150" alt="Logo"/>
 </p>
 
 <div align="center">
