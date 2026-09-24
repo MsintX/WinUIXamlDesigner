@@ -1,4 +1,3 @@
-> README除开头勋章部分，其他部分均使用AI编写
 <p align="center">
 <img src="\Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png" width="150" alt="Logo"/>
 </p>
@@ -181,10 +180,13 @@ UI 框架 WinUI 3（Windows App SDK）
    Ctrl + Shift + B
    ```
 
-### 从安装包安装
-1.在[Release界面](https://github.com/MsintX/WinUIXamlDesigner/Releases)下载安装包(msix)和pfx文件；  
-2.安装pfx证书，位置选择“受信任的根证书颁发机构”；  
-3.安装msix包。  
+### 从安装包安装  
+
+1.前往[Release界面](https://github.com/MsintX/WinUIXamlDesigner/Releases)；
+2.选择合适（推荐选择Lastet Release）的版本 打开附件列表；
+3.安装pfx证书，位置选择“受信任的根证书颁发机构”；  
+4.安装msix包。  
+
 ---
 
 ## 快速上手  
