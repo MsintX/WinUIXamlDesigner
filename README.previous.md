@@ -18,7 +18,7 @@
 - XAML 增量写回：以打开时的原始 XAML 为基线，复用已有 XElement，仅更新 Grid/控件相关属性；尽量保留原有注释、空白和无关属性。
 - 删除/增加 Grid 行列；删除会影响已有控件时拒绝操作，不静默移动或截断。
 - 项目选择器可从 .csproj 所在目录选择 XAML；Esc 取消放置，Delete 删除选中控件。
-- 独立“关于”页改为 ContentDialog，注明：**作者：MisntX & ChatGPT**、**Code is full AI**。
+- 独立“关于”页改为 ContentDialog
 - 不支持的复杂结构会被保留但不进入视觉模型；Auto/固定行列只读预览，行列编辑按钮禁用，不静默修改原布局。
 
 ## XAML 保真说明
@@ -35,8 +35,6 @@
 - Windows App SDK 2.5.1
 - Microsoft.CodeAnalysis.CSharp 5.9.0
 - Microsoft.CodeAnalysis.CSharp.Workspaces 5.9.0
-
-当前开发环境不是 Windows，因此无法在这里执行 WinUI/Windows SDK 的实际编译；源码和项目文件已按 Windows 目标生成。
 
 ## 使用示例
 
@@ -56,16 +54,6 @@
 ## 明确边界
 
 这是方案第一阶段的可用实现，而不是 VS Designer 的替代品。它不做真实控件渲染，不尝试推断复杂布局意图，也不碰 VS 进程内部同步。
-
-
-## 作者与 AI 声明
-
-**作者：MisntX & ChatGPT**
-
-**Code includes small AIGC**
-
-本项目的部分源码实现由 AI 完成，并由作者进行需求、方向和实现验收。
-
 
 ## Fix 9 行为
 
