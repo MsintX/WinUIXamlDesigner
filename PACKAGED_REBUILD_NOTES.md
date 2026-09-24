@@ -1,6 +1,6 @@
 # WinUI XAML Designer — Packaged 重建说明
 
-这一版不是在旧项目上继续打补丁，而是重新整理为一个干净的 **WinUI 3 Single-project MSIX / Packaged** 项目。
+笑点解析：项目创成Unpackaged了，然后雷霆MsintX直接重新新建一个Packaged项目
 
 ## 关键点
 
@@ -18,8 +18,6 @@
 ## 开发证书
 
 项目附带 `WinUIXamlDesigner_TemporaryKey.pfx`，用于本地开发/调试签名。
-
-这是开发证书，不用于正式发布。公开 Git 仓库时请不要提交私钥；正式发布应换成自己的签名证书。
 
 如果 Windows 在安装开发包时提示不信任发布者，请安装该 PFX 对应的证书到当前用户的“受信任的人”证书存储，或在 Visual Studio 的包签名设置中选择自己的开发证书。
 
