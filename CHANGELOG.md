@@ -3,10 +3,6 @@
 > 项目定位：一个独立于 Visual Studio 的轻量级 WinUI 3 XAML 可视化编辑器。
 >
 > 核心目标：把“拖控件 → 起 `x:Name` → 生成事件 → 写回 `.xaml/.cs`”这条高频路径从手写 XAML 变成可视化操作。
->
-> 作者：**MisntX & ChatGPT**
->
-> AI 声明：**Code includes small AIGC**
 
 ---
 
@@ -113,8 +109,6 @@
 
 # 2. Phase 2 — 从 Demo 开始向 Designer 演进
 
-第一阶段可用 MVP 之后，进入第二阶段。
-
 ### XAML 写回
 
 开始从“重建整个 Grid”转向：
@@ -151,11 +145,7 @@
 
 ### 关于
 
-加入“关于”功能，最初以页面/窗口形式实现，并注明：
-
-**作者：MisntX & ChatGPT**
-
-**Code includes small AIGC**
+加入“关于”功能，最初以页面/窗口形式实现，后改为ContentDialog
 
 ---
 
@@ -301,15 +291,7 @@ WinUI Controls 默认资源字典没有正确加载。
 
 # 8. Phase 2 Fixed 6 — XAML 打开体验与 UI 调整
 
-用户反馈：
-
-- 空白 `.xaml` 打开时报：
-  `Root element is missing.`
-- “关于”不需要单独窗口。
-- 工具箱可以去掉图标。
-- 专业术语后应该给出中文解释。
-
-### 修复 / 改进
+### 修复/改进
 
 #### 关于
 
@@ -766,14 +748,7 @@ string 常量值
 ========== 生成: 1 成功，0 失败，0 最新，0 已跳过 ==========
 ========== 生成 于 11:51 完成，耗时 16.586 秒 ==========
 ```
-
-因此项目从这一刻开始正式进入：
-
-> **“可编译、开始进行实际体验测试”**
-
-阶段。
-
-这比单纯的源码静态检查更进一步，因为已经经过真实的 Windows / Visual Studio / MSBuild 构建链。
+（不对啊我为什么要贴输出）  
 
 ---
 
@@ -940,17 +915,6 @@ Visual Studio 检测外部修改
 | Current | **本机 Visual Studio Build 通过** |
 
 ---
-
-## 作者
-
-**MisntX & ChatGPT**
-
-## AI 声明
-
-**Code includes small AIGC**
-
-本项目的源码实现由 AI 完成，并由作者负责需求、方向、测试与验收。
-
 
 # 21. Fix 13 — 属性提交与 WindowTitleBar 预览
 
