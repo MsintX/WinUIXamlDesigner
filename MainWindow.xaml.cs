@@ -61,9 +61,9 @@ public sealed partial class MainWindow : Window {
 	{
 		"直接从工具箱拖到画布，无需先选中控件。",
 		"单击画布空白区域即可选择 Window（窗口）。",
-		"Ctrl+S 会先提交当前正在编辑的属性，再写回 XAML。",
+		"Ctrl+S 会先提交当前正在编辑的属性，再保存到 XAML。",
 		"单行输入框可以按 Enter 提交；多行输入框会保留换行行为。",
-		"拖动控件时只更新内存模型，松手后才写回文件。",
+		"拖动控件时只更新内存模型，松手后才保存文件。",
 		"x:Name（控件名称）可以自动派生 Click 或 Tapped 事件。",
 		"Visual Studio 检测到外部 XAML 修改后，可以选择重新加载。",
 		"Grid（网格布局）目前优先使用相对布局，每个单元格按 * 均分。",
@@ -83,7 +83,37 @@ public sealed partial class MainWindow : Window {
 		"你知道吗？MsintX是一名初一生！还tm寄宿！",
 		"Hello Coder!",
 		"项目立项于2026.9.19！",
-		"其实这个软件的作者MsintX是不仅是音游入，还是名wmc！"
+		"其实这个软件的作者MsintX是不仅是音游入，还是名wmc！",
+		"学好数理化，走遍天下都不怕！",
+		"你醒啦？请你复习一下数轴、相反数、绝对值、倒数、乘方、有理数、有理数的加 减 乘 除还有三元一次方程吧！",
+		"我要网暴这个C#，回来吧面向过程，我最骄傲的信仰↑↑",
+		"C++ ×\nCNM √",
+		"闹吃vs古振兴，谁才是赢家？",
+		"xxx xxx xxxxxxx",
+		"x x xxx",
+		"VS自动补全别捣乱行不",
+		"我要的面向var编程哪去了，为什么我写var(var)var会报错",
+		"请投入硬币，要开始了哟，欢迎回来！",
+		"我是臀萌 + 句号。",
+		"UWP好看？跟我的SandBox、生命周期、Store分发、旁加载说去吧",
+		"没人觉得Metro Design(Modern UI)很好看嘛",
+		"WinUI 3的生命周期和UWP的生命周期不一样，WinUI 3的生命周期是Win32的生命周期",
+		"前面忘了，中间忘了，后面忘了",
+		"我把春、观沧海、次北固山下、闻王昌龄左迁龙标遥有此寄、天净沙·秋思都背完了！！",
+		"Visual Studio自动补全那么牛逼能不能帮我把2000+ error的报错补全成not error found啊",
+		"BiliBili关注MsintX谢谢喵，YouTube订阅MsintX谢谢喵",
+		"我想要一个全是“awmc”的评论区",
+		"A：你这tip怎么内嵌在cs里面啊\nQ：json多难写，解析json的NuGet引用多麻烦，你就忍忍呗（手动doge",
+		"像素方块的硬核才是王道你的卡通画风根本没技巧\n萌趣的世界才受大众喜爱你的硬核玩法早就被时代落败",
+		"雷军！金凡！",
+		"7月份才想起澎湃解bl通道在1月份就关了，喂我花生喂我花生",
+		"这种粉丝少的up整活最狠了",
+		"中秋节当天，有人在吃月饼，有人在赏月，而我就不一样了，我在Phigros 4.0.0 Update",
+		"“难道没人觉得一段文字加上双引号和英文句号会很高级吗.”",
+		"VS的IntelliSense错误列表就是lj",
+		"截至目前，WinUI XAML Designer已经有超过0人的下载量了！",
+		"各位Watcher们能不能帮我写完作业，能写完的自动获得美国核弹发射权",
+		"你知道吗？WinUI XAML Designer的第一个Release预计在中秋发布！"
 	};
 
 	private int _lastTipIndex = -1;
@@ -214,10 +244,10 @@ public sealed partial class MainWindow : Window {
 			_document.Normalize();
 			await new WriteBackService(_xaml, _csharp).WriteAsync(_document, _savedSnapshot);
 			_savedSnapshot = _document.Clone();
-			StatusText.Text = $"已写回：{_document.FilePath}；Visual Studio 可重载外部修改。";
+			StatusText.Text = $"已保存：{_document.FilePath}；Visual Studio 可重载外部修改。";
 			UpdateUi();
 		} catch (Exception ex) {
-			await ShowErrorAsync($"写回失败：{ex.Message}");
+			await ShowErrorAsync($"保存失败：{ex.Message}");
 		}
 	}
 
@@ -226,7 +256,7 @@ public sealed partial class MainWindow : Window {
 		if (_document.IsDirty) {
 			var dialog = CreateDialog(
 				title: "重新加载",
-				content: "当前有未写回的内存修改，重新加载会丢弃这些修改。",
+				content: "当前有未保存的内存修改，重新加载会丢弃这些修改。",
 				primaryButtonText: "重新加载",
 				closeButtonText: "取消",
 				defaultButton: ContentDialogButton.Close);
@@ -457,7 +487,7 @@ public sealed partial class MainWindow : Window {
 		}
 
 		await AutoWriteAsync();
-		StatusText.Text = _document.IsDirty ? "有未写回变更" : "已同步";
+		StatusText.Text = _document.IsDirty ? "有未保存变更" : "已同步";
 		RenderCanvas();
 	}
 
@@ -807,7 +837,7 @@ public sealed partial class MainWindow : Window {
 			_savedSnapshot = _document.Clone();
 			UpdateUi();
 		} catch (Exception ex) {
-			await ShowErrorAsync($"自动写回失败（变更仍保留在内存）：{ex.Message}");
+			await ShowErrorAsync($"自动保存失败（变更仍保留在内存）：{ex.Message}");
 		}
 	}
 
@@ -1261,7 +1291,7 @@ public sealed partial class MainWindow : Window {
 	}
 
 	private void UpdateUi() {
-		StatusText.Text = _document is null ? "未打开文件" : $"{_document.FilePath}{(_document.IsDirty ? "  •  未写回" : "  •  已同步")}";
+		StatusText.Text = _document is null ? "未打开文件" : $"{_document.FilePath}{(_document.IsDirty ? "  •  未保存" : "  •  已同步")}";
 		GridStatusText.Text = _document is null
 			? "Grid 1 × 1"
 			: _document.GridSizingSupported
@@ -1300,7 +1330,7 @@ public sealed partial class MainWindow : Window {
 
 	private async Task ShowErrorAsync(string message) {
 		var dialog = CreateDialog(
-			title: "操作失败",
+			title: "发现错误",
 			content: message,
 			closeButtonText: "确定",
 			defaultButton: ContentDialogButton.Close);
