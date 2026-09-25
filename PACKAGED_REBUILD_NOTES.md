@@ -1,3 +1,4 @@
+> 这个文件自2026/9/25起不再更新
 # WinUI XAML Designer — Packaged 重建说明
 
 笑点解析：项目创成Unpackaged了，然后雷霆MsintX直接重新新建一个Packaged项目
