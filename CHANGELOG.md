@@ -1,3 +1,4 @@
+> 这个文件自2026/9/25起不再更新，平替请查看Github Commit日志
 # WinUI XAML Designer — 完整更新日志
 
 > 项目定位：一个独立于 Visual Studio 的轻量级 WinUI 3 XAML 可视化编辑器。
